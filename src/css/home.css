@@ -216,20 +216,21 @@ a{
 
 .projects-page-section .card{
     width: 27rem;
-    height: 35rem;
+    height: 50rem;
     align-items: center;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .programs-page-section .card{
     width: 27rem;
-    height: 35rem;
+    height: 50rem;
     align-items: center;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .card{
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .card-title{
     text-align: center;
