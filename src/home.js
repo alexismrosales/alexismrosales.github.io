@@ -27,7 +27,7 @@ export default function Home(){
                             <div className='col-md-12'>
                                 {/*PROFILE PICTURE WILL BE SHOWN*/}
                                 <div className='pfp-span'>
-                                <div id="carouselExampleSlidesOnly" className="carousel slide" data-interval="2000  " data-bs-ride="carousel">
+                                <div id="carouselExampleSlidesOnly" className="carousel slide" data-interval="1000" data-bs-ride="carousel">
                                     <div className="carousel-inner">
                                         <div className="carousel-item active ">
                                         <img  className='pfp' src={photo1} alt='pfp-photo'/> 
@@ -35,9 +35,7 @@ export default function Home(){
                                         <div className="carousel-item">
                                         <img className='pfp' src={photo2} alt="pfp-photo"/>
                                         </div>
-                                        <div className="carousel-item">
-                                        <img className="pfp-3" src={photo3}  alt="pfp-photo"/>
-                                        </div>
+                                        
                                     </div>
                                     </div>
                                     
@@ -206,12 +204,10 @@ export default function Home(){
                                                 <div className="carousel-item active ">
                                                 <img  className='pic' src={photo1} alt='pfp-photo'/> 
                                                 </div>
-                                                <div className="carousel-item">
-                                                <img className='pic' src={photo2} alt="pfp-photo"/>
+                                                <div className="carousel-item active ">
+                                                <img  className='pic' src={photo1} alt='pfp-photo'/> 
                                                 </div>
-                                                <div className="carousel-item">
-                                                <img className="pic" src={photo3}  alt="pfp-photo"/>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
