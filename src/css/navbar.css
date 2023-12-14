@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300;400&display=swap');
+:root{
+    --blue: #068FFF;
+    --white: #d3d3d3;
+    --purple: #4949da;
+}
+.nav{
+    background-color: var(--purple);
+    color: white;
+}
+.nav.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+}
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
+.brand-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    color: #EEEEEE;
+}
+.brand-title1
+{
+    font-weight: bold;
+    color: #000000;
+}
+.brand-title2{
+    color:var(--purple)
+}
+.nav-link-color{
+    font-family: 'Roboto Slab', serif;
+    font-size:1em;
+    color: var(--white);
+}
+.div-visible{
+    visibility: hidden;
+}
+@media(width < 992px)
+{
+    .div-invisible{
+        visibility: hidden;
+    }
+    .div-visible{
+        visibility: visible;
+    }
+    .nav-link-color{
+        color: #000000;
+    }
+}
