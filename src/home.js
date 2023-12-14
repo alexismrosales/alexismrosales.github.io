@@ -67,26 +67,31 @@ export default function Home(){
                 </section>
                 <section  className='projects-page-section' id='projects-page-section-id'>
                     <div className='container projects-page'>
-                        <div className='row mb-3'>
-                            <div className='col-md-12 text-center'>
+                        <div className='row '>
+                            <div className='col-md-12 text-center justify-content-center'>
                                 <div className='project-title-div'>
                                     <p className='title-name'>Projects</p> 
                                 </div> 
                             </div>
-                            <div className='col-md-6 col-lg-4 pt-4'>
+                            <div className='col-sm-12 col-md-6 col-lg-4 pt-4'>
                                 <div className='card'>
                                     <img src="..." className="card-img-top" alt="..."/>
                                     <div className="card-body">
                                         <h5 className="card-title">Card title</h5>
                                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a className='tag'><span className='tag-text'></span>C++</a>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>C++</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
+                                        
                                     </div>
                                     <div className="card-footer bg-transparent">
                                     <button className='section-btn project1'>Check out</button>
                                     </div>
                                 </div>  
                             </div>
-                            <div className='col-md-6 col-lg-4 pt-4'>
+                            <div className='col-sm-12 col-md-6 col-lg-4 pt-4'>
                                 <div className='card'>
                                     <img src="..." className="card-img-top" alt="..."/>
                                     <div className="card-body">
@@ -98,7 +103,7 @@ export default function Home(){
                                     </div>
                                 </div>  
                             </div>
-                            <div className='col-md-6 col-lg-4 pt-4'>
+                            <div className='col-sm-12 col-md-6 col-lg-4 pt-4'>
                                 <div className='card'>
                                     <img src="..." className="card-img-top" alt="..."/>
                                     <div className="card-body">
@@ -129,8 +134,8 @@ export default function Home(){
                                     <div className="card-body">
                                         <h5 className="card-title">Card title</h5>
                                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a className='tag'><span className='tag-text'></span>C++</a>
-                                        <a className='tag'><span className='tag-text'></span>Javascript</a>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>C++</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
                                     </div>
                                     <div className="card-footer bg-transparent">
                                     
@@ -144,8 +149,9 @@ export default function Home(){
                                     <div className="card-body">
                                         <h5 className="card-title">Card title</h5>
                                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a className='tag'><span className='tag-text'></span>C++</a>
-                                        <a className='tag'><span className='tag-text'></span>Javascript</a>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>C++</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
+                                        <div className='div-tag'><a className='tag'><span className='tag-text'></span>Javascript</a></div>
                                     </div>
                                     <div className="card-footer bg-transparent">
                                     
@@ -186,32 +192,33 @@ export default function Home(){
                     <div className='container-fluid text-center '>
                                 <div className='row'>
                                 <div className='col-md-6 col-xs-12'>
-                                        <div className='aboutme-text'>
-                                             <p className='title-name'>ABOUT ME</p>
-                                        </div>
-                                       
-                                    </div>
-                                    <div className='col-md-6 col-xs-12'>
+                                            <div className='aboutme-text'>
+                                                <p className='title-name'>ABOUT ME</p>
+                                            </div>
+                                </div>
+                                <div className='col-md-6 col-xs-12'>
                                     
-                                        <div className='pic-pos-span'>
-                                        
-                                        <div className='pics-span'>
-                                            <div id="carouselExampleSlidesOnly" className="carousel slide" data-interval="2000  " data-bs-ride="carousel">
-                                                <div className="carousel-inner">
-                                                    <div className="carousel-item active ">
-                                                    <img  className='pic' src={photo1} alt='pfp-photo'/> 
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className='pic' src={photo2} alt="pfp-photo"/>
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="pic" src={photo3}  alt="pfp-photo"/>
-                                                    </div>
+                                    <div className='pic-pos-span'>
+                                    
+                                    <div className='pics-span'>
+                                        <div id="carouselExampleSlidesOnly" className="carousel slide" data-interval="2000  " data-bs-ride="carousel">
+                                            <div className="carousel-inner">
+                                                <div className="carousel-item active ">
+                                                <img  className='pic' src={photo1} alt='pfp-photo'/> 
+                                                </div>
+                                                <div className="carousel-item">
+                                                <img className='pic' src={photo2} alt="pfp-photo"/>
+                                                </div>
+                                                <div className="carousel-item">
+                                                <img className="pic" src={photo3}  alt="pfp-photo"/>
                                                 </div>
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
+                                    </div>
+                                    </div>
+                                    
+                                    
                                     
                                 </div>
                         

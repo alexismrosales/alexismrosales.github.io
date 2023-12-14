@@ -41,10 +41,13 @@ a{
     width: 100%;
     padding-bottom: 2rem;
 }
-.aboutme-page{
-    background: linear-gradient(to right, var(--white) 50%, var(--purple) 50%);
+.aboutme-page-section{
+    background-color: var(--white2);
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-main-page{
     overflow: hidden;
@@ -168,7 +171,6 @@ a{
 .tag{
     padding: 0.60em;
     padding-right: 3rem;
-    margin: 1rem;
     border-left-width: thick;
     border-left-style: solid;
     border-left-color: var(--purple);
@@ -180,6 +182,11 @@ a{
     text-decoration: none;
     font-size: 14px;
   }
+  .div-tag{
+    padding-right: 1rem;
+    padding-top: 2rem;
+    display: inline-block;
+}
 .programs-page-section .tag{
     border-left-color: var(--white);
 }
@@ -242,6 +249,21 @@ a{
     margin: auto;
     text-align: center;
 }
+@media (width < 543px) {
+    .card{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 543px) and (max-width: 600px)
+{
+    .card{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+}
 @media (width < 600px) {
     .pfp-span{
         margin-top: 30%;
@@ -252,10 +274,7 @@ a{
     .project-title-div{
         margin-top: 6rem;
     }
-    .card{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+    
     .aboutme-page{
         background: var(--white2);
     }
@@ -270,7 +289,14 @@ a{
     }
     
 }
-
+@media (min-width: 601px) and (max-width: 768px)
+{
+    .card{
+        margin-top: 1rem;
+        margin-left: 2rem       ;
+        margin-bottom: 1rem;
+    }
+}
 @media (min-width: 601px) and (max-width: 1023px)
 {
     .pfp-span{
@@ -284,8 +310,7 @@ a{
         margin-bottom: 1rem;
     }
     .aboutme-page{
-        background: linear-gradient(to bottom, var(--white) 50%, var(--purple) 50%);
-        height: 100vh;
+        height: 60vh;
         width: 100%;
     }
     .pics-span{
