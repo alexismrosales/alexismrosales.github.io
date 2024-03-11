@@ -1,8 +1,12 @@
-import Home from './components/aboutme';
+import Header from './components/header';
+import Intro from './components/intro';
+import AboutMe from './components/aboutme';
 function App() {
   return (
     <div className="App">
-      <Home/> 
+      <Header/>
+      <Intro/>
+      <AboutMe/>
     </div>
   );
 }

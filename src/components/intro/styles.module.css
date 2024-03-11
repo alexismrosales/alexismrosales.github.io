@@ -1,0 +1,50 @@
+@keyframes background-pan{
+    from{
+        background-position: 0% center;
+    }
+    to
+    {
+        background-position: -200% center;
+    }
+}
+.container{
+    @apply
+    h-screen
+    w-full
+    bg-[var(--purple)]
+}
+.carousel{
+    @apply
+    pt-[4rem]
+    flex
+    items-center
+    justify-center
+}
+.content{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+}
+.name{
+    @apply
+    p-4;
+    animation: background-pan 20s linear infinite;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.3rem;
+    color: transparent;
+    background: linear-gradient( 90deg, var(--purple), var(--white));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+.nameP1{
+    font-family: 'Playfair Display', serif;
+}
+.mainText{
+    @apply
+    w-[30rem]
+}

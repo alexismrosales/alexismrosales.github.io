@@ -7,18 +7,26 @@ import './index.css';
 
 import App from './App';
 
-import global_en from './translations/en/global.json';
-import global_es from './translations/es/global.json';
+import header_en from './data/en/header.json';
+import intro_en from './data/en/intro.json';
+import aboutme_en from './data/en/aboutme.json';
 
+import header_es from './data/es/header.json';
+import intro_es from './data/es/intro.json';  
+import aboutme_es from './data/es/aboutme.json';
 i18next.init({
   interpolation: { escapeValue: false },
   lng: 'en',
   resources: {
     en: {
-      global: global_en
+      header : header_en,
+      intro: intro_en,
+      aboutme: aboutme_en
     },
     es: {
-      global: global_es
+      header : header_es,
+      intro: intro_es,
+      aboutme: aboutme_es
     }
   }
 

@@ -1,0 +1,6 @@
+.container{
+    @apply
+    h-[20rem]
+    w-[20rem]
+    rounded-full
+}

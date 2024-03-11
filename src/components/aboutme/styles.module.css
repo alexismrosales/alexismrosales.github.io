@@ -1,0 +1,6 @@
+.container{
+    @apply
+    h-screen
+    w-full
+    bg-white
+}

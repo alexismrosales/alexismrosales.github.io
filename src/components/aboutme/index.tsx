@@ -1,12 +1,14 @@
 import { useTranslation } from "react-i18next";
 
-const Home = () => {
-    const [data, setData] = useTranslation("global");
+import style from './styles.module.css'
+const AboutMe = () => {
+    const {t} = useTranslation();
     return (
-    <section>
-        <h1>Home</h1>
-        <p>{data("aboutMe")}</p>
+    <section id="AboutMe">
+        <div className={style.container}>
+            
+        </div>
     </section>
     );
 }
-export default Home;
+export default AboutMe;
