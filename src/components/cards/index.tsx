@@ -1,6 +1,6 @@
-import React, { useEffect, useContext, FunctionComponent } from 'react';
+import React, { useEffect, useContext, FunctionComponent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Card, CardHeader, CardBody, CardFooter } from "@material-tailwind/react";
+import { Card, CardHeader, CardBody, CardFooter, Dialog, DialogBody } from "@material-tailwind/react";
 
 import { Project } from '../../data/Projects';
 import { Program } from '../../data/Programs';
@@ -22,8 +22,12 @@ const CustomCard : FunctionComponent<CardData> = props => {
     let linkgh : string | undefined = "";
     let linkweb : string | undefined = "";
     let tags : string[] = [];
+    let path = "";
 
     const { t, i18n } = useTranslation();
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(!open);
 
     const Item = props.element as Project | Program;
     title = Item.Title;
@@ -31,12 +35,15 @@ const CustomCard : FunctionComponent<CardData> = props => {
     linkweb = Item.LinkToWeb;
     text = i18n.language === "en" ? Item.en : Item.es;
     tags = i18n.language === "en" ? Item.Tags.en : Item.Tags.es;
+    
+    path = `img/${props.type}/${props.name}.png`;
+    
     return (
         <CardDataContext.Provider value={props}>
             <div className={style.container}>
                 <Card className={style.card} placeholder="Card">
                     <CardHeader color="white" className="relative h-100" placeholder="Card Header">
-                        <img className={style.cardImg} src={`img/${props.type}/${props.name}.png`} alt={props.name}/>
+                        <img className={style.cardImg} src={path} alt={props.name} onClick={handleOpen}/>
                     </CardHeader>
                     <CardBody className={style.CardBody} placeholder={`Text of ${props.name}`} >
                         <h1 className={style.CardTitle}>{props.name}</h1>
@@ -59,6 +66,11 @@ const CustomCard : FunctionComponent<CardData> = props => {
                     </CardFooter>
                 </Card>
             </div>
+            <Dialog open={open} handler={handleOpen} placeholder='' size={'lg'}>
+                <DialogBody placeholder="Focus dialog">
+                    <img className={style.dialogImg} src={path} alt={props.name}/>
+                </DialogBody>
+            </Dialog>
         </CardDataContext.Provider>
     )
 }

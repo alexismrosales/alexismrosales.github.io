@@ -71,3 +71,7 @@
     w-[2.5rem]
     h-[2.5rem]
 }
+.dialogImg{
+    @apply
+    size-full
+}
