@@ -152,3 +152,4 @@ const Programs : ProgramsI = {
         }
     }
 }
+export default Programs;

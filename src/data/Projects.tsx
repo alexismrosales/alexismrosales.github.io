@@ -152,3 +152,4 @@ const Projects : ProjectsI = {
         }
     }
 }
+export default Projects;
