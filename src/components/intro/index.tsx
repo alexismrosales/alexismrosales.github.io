@@ -39,7 +39,7 @@ const Intro = () => {
                         <a href={links.github}><img className={style.logoGH} alt='' src='img/logos/gh_white.png'/></a>
                         <a href={links.linkedin}><img className={style.logoIN} alt='' src='img/logos/in_white.png'/></a>
                     </div>
-                    <a className={classNames(style.arrowBtn,'scroll-link')} href='#AboutMe'><img className={style.arrow} src='img/logos/arrow.png'/></a>
+                    <a className={classNames(style.arrowBtn,'scroll-link')} href='#Projects'><img className={style.arrow} src='img/logos/arrow.png'/></a>
                 </div>
             </div>
         </section>
