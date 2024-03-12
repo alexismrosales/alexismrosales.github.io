@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Collapse } from '@material-tailwind/react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import SwitchBtn from './switchBtn';
+import smoothScroll from "../_scripts/smooth_scroll";
 
 import style from './styles.module.css';
 
@@ -12,19 +13,22 @@ const Header = () => {
     
     const [open, setOpen] = useState(false);
     const toggleOpen = () => { setOpen((state) => !state); }
-
+    useEffect(() => {
+        smoothScroll(".scroll-link");
+      }, []);
     const NavList = () => { 
         const { t } = useTranslation("header");
+        
         return (
                 <ul className={style.navList}>
                     <li className={style.navItem}>
-                        <a href="#Projects">{t("items.projects")}</a>
+                        <a className='scroll-link' href="#Projects">{t("items.projects")}</a>
                     </li>
                     <li className={style.navItem}>
-                        <a href="#Programs">{t("items.programs")}</a>
+                        <a className='scroll-link' href="#Programs">{t("items.programs")}</a>
                     </li>
                     <li className={style.navItem}>
-                        <a href="#AboutMe">{t("items.aboutme")}</a>
+                        <a className='scroll-link' href="#AboutMe">{t("items.aboutme")}</a>
                     </li>
                     <li className={style.links}>
                         <a href={links.github}><img className={style.logoGH} src='img/logos/gh_white.png'/></a>

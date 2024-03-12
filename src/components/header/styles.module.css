@@ -95,7 +95,7 @@
     md:hidden
     flex
     inline-flex
-    gap-5
+    gap-4
 }
 .logoGH
 {
@@ -127,6 +127,7 @@
     flex 
     items-center
     justify-center
+    drop-shadow-2xl
     bg-[var(--purple)]
 }
 
