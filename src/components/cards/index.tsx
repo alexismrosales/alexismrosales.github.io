@@ -5,7 +5,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@material-tailwind/react
 import { Project } from '../../data/Projects';
 import { Program } from '../../data/Programs';
 
-import style from './style.module.scss';
+import style from './styles.module.css';
 import classNames from 'classnames';
 import Projects from '../projects&programs';
 
@@ -16,7 +16,7 @@ interface CardData {
 }
 const CardDataContext = React.createContext<CardData | null>(null);
 
-export const CustomCard : FunctionComponent<CardData> = props => {
+const CustomCard : FunctionComponent<CardData> = props => {
     let title : JSX.Element = <span/>;
     let text = <span/>;
     let linkgh : string | undefined = "";
@@ -60,6 +60,7 @@ export const CustomCard : FunctionComponent<CardData> = props => {
         </CardDataContext.Provider>
     )
 }
+
 const ListTags : FunctionComponent <{ tags : string[] }> = ({ tags }) => (
     <div className={style.tags}>
         {tags.map((tag, index) => (
@@ -67,3 +68,5 @@ const ListTags : FunctionComponent <{ tags : string[] }> = ({ tags }) => (
         ))}
     </div>
 )
+
+export default CustomCard;
