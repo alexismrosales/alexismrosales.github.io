@@ -12,7 +12,7 @@ export interface ProjectsI { [key: string]: Project }
 const Projects : ProjectsI = {
     LoveAnalysis : {
         Title : (
-            <h1>Love Analysis</h1>
+            <h1>LoveAnalysis</h1>
         ),
         en : (
             <span>
