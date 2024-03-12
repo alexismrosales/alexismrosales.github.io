@@ -17,11 +17,13 @@ const Projects = () => {
     <>
         <section id="Projects">
             <div className={classNames(style.container,'bg-white')}>
+                <h2 className={classNames(style.title, 'text-[#4949da]')}>Projects</h2> 
                 <ListCards elements={ProjectData} type={"Project"} id="Project"/>
             </div>
         </section>
         <section id="Programs">
             <div className={classNames(style.container,'bg-[#4949da]')}>
+                <h2 className={classNames(style.title,'text-white')}>Programs</h2> 
                 <ListCards elements={ProgramData} type={"Program"} id="Program"/>
             </div>
         </section>
