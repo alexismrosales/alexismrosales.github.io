@@ -9,7 +9,8 @@
     text-[4rem]
     text-center
     drop-shadow-2xl
-    mt-[2rem];
+    mt-[2rem]
+    uppercase;
     font-family: 'Playfair Display', serif;
 }
 .containerCards

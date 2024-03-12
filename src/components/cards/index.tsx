@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardHeader, CardBody, CardFooter, Dialog, DialogBody } from "@material-tailwind/react";
 
@@ -7,7 +7,6 @@ import { Program } from '../../data/Programs';
 
 import style from './styles.module.css';
 import classNames from 'classnames';
-import Projects from '../projects&programs';
 
 interface CardData {
     name : string 
