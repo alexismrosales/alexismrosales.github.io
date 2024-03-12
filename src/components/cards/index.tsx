@@ -31,7 +31,6 @@ const CustomCard : FunctionComponent<CardData> = props => {
     linkweb = Item.LinkToWeb;
     text = i18n.language === "en" ? Item.en : Item.es;
     tags = i18n.language === "en" ? Item.Tags.en : Item.Tags.es;
-    console.log(props.type)
     return (
         <CardDataContext.Provider value={props}>
             <div className={style.container}>
@@ -40,9 +39,11 @@ const CustomCard : FunctionComponent<CardData> = props => {
                         <img className={style.cardImg} src={`img/${props.type}/${props.name}.png`} alt={props.name}/>
                     </CardHeader>
                     <CardBody className={style.CardBody} placeholder={`Text of ${props.name}`} >
+                        <h1 className={style.CardTitle}>{props.name}</h1>
+                        <br/>
                         {text}
                     </CardBody>
-                    <CardFooter className="pt-0 flex items-center"  placeholder={`Text of ${props.name}`}>
+                    <CardFooter className="absolute inset-x-0 bottom-0"  placeholder={`Text of ${props.name}`}>
                         <div>
                             <ListTags tags={tags}/>
                             <div className={style.links}>

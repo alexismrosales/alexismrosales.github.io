@@ -6,9 +6,11 @@
 }
 .card{
     @apply
-    mt-6
+    mt-[6rem]
+    md:w-[35rem]
     w-[30rem]
-    h-auto
+    md:h-[55rem]
+    h-[63rem]
     bg-white
 }
 .CardBody
@@ -16,6 +18,13 @@
     @apply
     text-justify;
 }
+.CardTitle{
+    @apply
+    text-2xl
+    font-bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
 .tag
 {
     @apply
@@ -39,12 +48,13 @@
 .links{
     @apply
     flex
-    inline-flex
     items-center
     justify-center
+    pt-3
 }
 .link{
     @apply
+    mx-2
     bg-black
     p-1
     px-3
