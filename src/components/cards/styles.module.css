@@ -1,0 +1,10 @@
+.container{
+    @apply
+    p-2
+}
+.card{
+    @apply
+    mt-6
+    w-100
+    bg-white
+}
