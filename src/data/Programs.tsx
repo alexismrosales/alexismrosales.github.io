@@ -1,4 +1,4 @@
-export type Programs = {
+export type Program = {
     Title : JSX.Element,
     en : JSX.Element,
     es : JSX.Element,
@@ -7,7 +7,7 @@ export type Programs = {
     Tags : {en : string[], es: string[]}
 }
 
-export interface ProgramsI { [key: string]: Programs }
+export interface ProgramsI { [key: string]: Program }
 
 const Programs : ProgramsI = {
     DualSimplexAlgorithm : {
