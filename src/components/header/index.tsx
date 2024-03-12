@@ -16,27 +16,7 @@ const Header = () => {
     useEffect(() => {
         smoothScroll(".scroll-link");
       }, []);
-    const NavList = () => { 
-        const { t } = useTranslation("header");
-        
-        return (
-                <ul className={style.navList}>
-                    <li className={style.navItem}>
-                        <a className='scroll-link' href="#Projects">{t("items.projects")}</a>
-                    </li>
-                    <li className={style.navItem}>
-                        <a className='scroll-link' href="#Programs">{t("items.programs")}</a>
-                    </li>
-                    <li className={style.navItem}>
-                        <a className='scroll-link' href="#AboutMe">{t("items.aboutme")}</a>
-                    </li>
-                    <li className={style.links}>
-                        <a href={links.github}><img className={style.logoGH} src='img/logos/gh_white.png'/></a>
-                        <a href={links.linkedin}><img className={style.logoIN} src='img/logos/in_white.png'/></a>
-                    </li>
-                </ul>
-        )
-    }
+    
     return (
         <nav className={style.nav}>
             <div className={style.container}>
@@ -73,3 +53,24 @@ const Header = () => {
     )
 }
 export default Header;
+const NavList = () => { 
+    const { t } = useTranslation("header");
+    
+    return (
+            <ul className={style.navList}>
+                <li className={style.navItem}>
+                    <a className='scroll-link' href="#Projects">{t("items.projects")}</a>
+                </li>
+                <li className={style.navItem}>
+                    <a className='scroll-link' href="#Programs">{t("items.programs")}</a>
+                </li>
+                <li className={style.navItem}>
+                    <a className='scroll-link' href="#AboutMe">{t("items.aboutme")}</a>
+                </li>
+                <li className={style.links}>
+                    <a href={links.github}><img className={style.logoGH} src='img/logos/gh_white.png'/></a>
+                    <a href={links.linkedin}><img className={style.logoIN} src='img/logos/in_white.png'/></a>
+                </li>
+            </ul>
+    )
+}

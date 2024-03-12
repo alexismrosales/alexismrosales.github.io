@@ -1,6 +1,5 @@
 .container{
     @apply
-    h-[20rem]
-    w-[20rem]
+    h-[22rem] w-[22rem]
     rounded-full
 }

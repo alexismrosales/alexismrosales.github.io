@@ -1,6 +1,6 @@
 .container{
     @apply
-    h-screen
+    h-auto
     w-full
     bg-white
 }

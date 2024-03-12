@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { CarouselTransition } from "../carousel/index";
+import CarouselTransition from "../carousel/index";
 import smoothScroll from "../_scripts/smooth_scroll";
 
 import links from "../../data/links.json";
@@ -24,9 +24,9 @@ const Intro = () => {
                     <CarouselTransition/>
                 </div>
                 <div className={style.content}>
-                    <p className={style.name}>
+                    <h1 className={style.name}>
                         Jorge <span className={style.nameP1}>Alexis M</span>árquez <span className={style.nameP1}>Rosales</span>
-                    </p>  
+                    </h1>  
                     <p className={style.mainText}>
                         {t("mainText")}
                     </p>
@@ -36,7 +36,7 @@ const Intro = () => {
                         </button>
                     </a>
                     <div className={style.links}>
-                        <a href={links.github} ><img className={style.logoGH} alt='' src='img/logos/gh_white.png'/></a>
+                        <a href={links.github}><img className={style.logoGH} alt='' src='img/logos/gh_white.png'/></a>
                         <a href={links.linkedin}><img className={style.logoIN} alt='' src='img/logos/in_white.png'/></a>
                     </div>
                     <a className={classNames(style.arrowBtn,'scroll-link')} href='#AboutMe'><img className={style.arrow} src='img/logos/arrow.png'/></a>

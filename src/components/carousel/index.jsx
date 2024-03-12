@@ -2,12 +2,11 @@ import { Carousel } from "@material-tailwind/react";
 import classNames from "classnames";
 
 import style from "./styles.module.css";
-export function CarouselTransition(height, width) {
- 
+export default function CarouselTransition() {
   return (
     <Carousel 
       transition={{ duration: 1 }} 
-      className={classNames('h-['+height.height+'rem] w-['+height.width+'rem]', style.container)} 
+      className={classNames(style.container)} 
       loop={true}
       autoplayDelay={4000}
       autoplay={true}

@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
     <section id="AboutMe">
         <div className={style.container}>
-            
+            xd
         </div>
     </section>
     );
