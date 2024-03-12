@@ -34,7 +34,7 @@ const ListCards : FunctionComponent<{
     type : "Project" | "Program",
     id : string
 }> = props => (
-    <div className={style.container} id={props.id}>
+    <div className={style.containerCards} id={props.id}>
         {Object.entries(props.elements).map(([name, Element]) => (
         <Card key={name} name={name} element={Element} type={props.type} />
       ))}

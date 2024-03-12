@@ -3,3 +3,13 @@
     h-auto
     w-full
 }
+.containerCards
+{
+    @apply
+    flex
+    items-center
+    justify-center
+    grid 
+    md:grid-cols-3
+    grid-cols-1
+}

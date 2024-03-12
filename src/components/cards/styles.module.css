@@ -1,10 +1,63 @@
 .container{
     @apply
-    p-2
+    flex
+    items-center
+    justify-center
 }
 .card{
     @apply
     mt-6
-    w-96
+    w-[30rem]
+    h-auto
     bg-white
+}
+.CardBody
+{
+    @apply
+    text-justify;
+}
+.tag
+{
+    @apply
+    p-2
+    mx-1
+    my-1
+    flex
+    inline-flex;
+    
+    border-left-width: thick;
+    border-left-style: solid;
+    border-left-color: var(--purple);
+    border-radius: 2em;
+    color: var(--white);
+    font-weight: bold;
+    background: var(--black);
+    background-size: 100%;
+    text-decoration: none;
+    font-size: 14px;
+}
+.links{
+    @apply
+    flex
+    inline-flex
+    items-center
+    justify-center
+}
+.link{
+    @apply
+    bg-black
+    p-1
+    px-3
+    rounded-3xl
+}
+.imgGH{
+    @apply
+    w-[2.5rem]
+    h-[2.5rem]
+    p-1
+}
+.imgWeb{
+    @apply
+    w-[2.5rem]
+    h-[2.5rem]
 }
