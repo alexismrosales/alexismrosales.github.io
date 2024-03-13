@@ -24,7 +24,10 @@
     font-bold;
     font-family: 'Roboto Mono', monospace;
 }
-
+.tags{
+    @apply
+    pb-2
+}
 .tag
 {
     @apply

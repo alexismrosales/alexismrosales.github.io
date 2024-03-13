@@ -54,6 +54,7 @@ const CustomCard : FunctionComponent<CardData> = props => {
                     <CardFooter className="absolute inset-x-0 bottom-0"  placeholder={`Text of ${props.name}`}>
                         <div>
                             <ListTags tags={tags}/>
+                            <hr className='border-double'/>
                             <div className={style.links}>
                                 <a href={linkgh} className={classNames(style.link, style.gh)}>
                                     <img className={style.imgGH} src='img/logos/gh_white.png'/>
