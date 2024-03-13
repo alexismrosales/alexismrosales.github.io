@@ -6,7 +6,8 @@
 }
 .title{
     @apply
-    text-[4rem]
+    md:text-[4rem]
+    text-5xl
     text-center
     drop-shadow-2xl
     mt-[2rem]
