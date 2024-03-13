@@ -18,18 +18,14 @@ const Programs : ProgramsI = {
             <p>
                 This is my personal portfolio, I made it to show my projects and skills. The website is made with React and Typescript, using different libraries like Tailwind and i18next.
                 <br/><br/>
-                The website is hosted in GitHub Pages and the source code is in my GitHub repository.
-                <br/><br/>
-                The website is responsive and a language toggle option.
+                The website is responsive and has a language toggle option, it is hosted in GitHub Pages.
             </p>
         ),
         es : (
             <p>
                 Este es mi portafolio personal, lo hice para mostrar mis proyectos y habilidades. El sitio web está hecho con React y Typescript, utilizando diferentes bibliotecas como React Router Dom y i18next.
                 <br/><br/>
-                El sitio web está alojado en GitHub Pages y el código fuente está en mi repositorio de GitHub.
-                <br/><br/>
-                El sitio web es responsivo y tiene una opción para cambiar de idioma.
+                El sitio web es responsivo y tiene una opción de cambio de idioma, está alojado en GitHub Pages.
             </p>
         ),
         LinkToProject : "https://github.com/alexismrosales/alexismrosales.github.io",
@@ -49,7 +45,7 @@ const Programs : ProgramsI = {
                 <br/><br/>
                 The app is using the endpoints given by Spring Boot, using different CRUD operations with HTTP request like POST, GET and DELETE, saving the tasks of the browser into a database in MySQL.
                 <br/><br/>
-                The database table for the tasks is created with Lombok and fetching the data with Axios.
+                The database table for the tasks is created with Lombok and fetching and the data is fetched with with Axios.
             </p>
         ),
         es : (
