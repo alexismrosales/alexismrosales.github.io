@@ -1,0 +1,30 @@
+.container{
+    @apply
+    h-auto
+    w-full
+    grid
+    md:grid-cols-2
+    px-9
+    py-2
+    md:px-[10rem]
+    text-white
+    bg-[var(--purple)]
+    flex 
+    items-center;
+    font-family: 'Roboto Slab', serif;
+}
+.title{
+    @apply
+    text-3xl
+    pb-3;
+}
+.item{
+    @apply
+    p-1
+}
+.madeby{
+    @apply
+    mt-12
+    md:mt-[6rem]
+    text-center;
+}
