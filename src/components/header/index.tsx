@@ -22,7 +22,7 @@ const Header = () => {
             <div className={style.container}>
                 
                 <div className={style.mainItems}>
-                    <a><span className={style.name}><span className={style.firstName}>Alexis</span> M.Rosales</span></a>    
+                    <a className='scroll-link' href='#Intro'><span className={style.name}><span className={style.firstName}>Alexis</span> M.Rosales</span></a>    
                     <div className={style.mainLinks}>
                         <a href={links.github}><img className={style.logoGH} alt='' src='img/logos/gh_white.png'/></a>
                         <a href={links.linkedin}><img className={style.logoIN} alt='' src='img/logos/in_white.png'/></a>
