@@ -1,6 +1,54 @@
 .container{
     @apply
+    md:h-[45rem]
     h-auto
     w-full
     bg-white
+    py-10
+    md:py-0
+    md:px-[10rem]
+    flex
+    items-center
+    grid
+    md:grid-cols-2
+    drop-shadow-2xl
+}
+
+.title{
+    @apply
+    text-6xl
+    text-center;
+    animation: background-pan 20s linear infinite;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient( 90deg, var(--black), var(--purple));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+}
+.text{
+    @apply
+    md:px-[8rem]
+    px-4
+    text-justify;
+    font-family: 'Roboto Slab', serif;
+}
+.phrase{
+    @apply
+    px-10
+    md:px-[14rem]
+    text-center;
+    font-family: 'Roboto Slab', serif;
+}
+@keyframes background-pan{
+    from{
+        background-position: 0% center;
+    }
+    to
+    {
+        background-position: -200% center;
+    }
 }
