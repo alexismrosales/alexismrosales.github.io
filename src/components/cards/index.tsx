@@ -17,7 +17,7 @@ const CardDataContext = React.createContext<CardData | null>(null);
 
 const CustomCard : FunctionComponent<CardData> = props => {
     let title : JSX.Element = <span/>;
-    let text = <span/>;
+    let text : JSX.Element = <></>;
     let linkgh : string | undefined = "";
     let linkweb : string | undefined = "";
     let tags : string[] = [];
@@ -45,9 +45,11 @@ const CustomCard : FunctionComponent<CardData> = props => {
                         <img className={style.cardImg} src={path} alt={props.name} onClick={handleOpen}/>
                     </CardHeader>
                     <CardBody className={style.CardBody} placeholder={`Text of ${props.name}`} >
-                        <h1 className={style.CardTitle}>{props.name}</h1>
+                        <h1 className={style.CardTitle}>{title}</h1>
                         <br/>
-                        {text}
+                        <div >
+                            {text}
+                        </div>
                     </CardBody>
                     <CardFooter className="absolute inset-x-0 bottom-0"  placeholder={`Text of ${props.name}`}>
                         <div>

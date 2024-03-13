@@ -14,10 +14,10 @@ const Projects : ProjectsI = {
         Title : (
             <h1>LoveAnalysis</h1>
         ),
-        en : (
+        en : 
             <span>
                 <p>I made this app for valentine's day (2024) for my girlfriend. It is a web app that made an small data analysis using an API which analyzes our whatsapp messages.</p>
-                <ul>
+                <ul className="list-disc list-inside">
                     <br/>
                     <li>The API was developed with python analyzing more than 40,000 whatsapp messages from our conversation, mainly using Pandas (for the analysis) and Flask (for the server).</li>
                     <br/>
@@ -25,18 +25,18 @@ const Projects : ProjectsI = {
                 </ul>
                 <b>Note: If the webpage does not show the data, just wait a moment. I am using a free webserver.</b>
             </span>
-        ),
-        es : (
+        ,
+        es : 
             <span>
                <p>Hice esta aplicación para el día de San Valentín (2024) para mi novia. Es una aplicación web que realiza un pequeño análisis de datos utilizando una API que analiza nuestros mensajes de WhatsApp.</p>
-               <ul>
+               <ul className="list-disc list-inside">
                      <br/>
                      <li>La API fue desarrollada con python analizando más de 40,000 mensajes de whatsapp de nuestra conversación, principalmente usando Pandas (para el análisis) y Flask (para el servidor).</li>
                      <br/>
                      <li>Usando React y Tailwind, el sitio web se dividió en diferentes partes que muestran diferentes datos que me parecieron interesantes de nuestra conversación de WhatsApp.</li>
                </ul>
             </span>
-        ),
+        ,
         LinkToProject : "https://github.com/alexismrosales/love_analysis_web_app/",
         LinkToWeb : "https://alexismrosales.github.io/love_analysis_web_app/",
         Tags : {
@@ -48,12 +48,12 @@ const Projects : ProjectsI = {
         Title : (
             <h1>Interprex</h1>
         ),
-        en : (
+        en : 
             <span>
                 <p>This project was made in Java at mid-2023 in collaboration of my partner Aranza for my compilers course. It is an interpreter were you can program different structures like loops, conditionals and solve arithmetic operations.</p>
-                <ul>
+                <ul className="list-disc list-inside">
                     <li>The code is evaluated with three different stages.  
-                        <ul>
+                        <ul className="list-disc list-inside">
                             <li>Scanner: it verify if the lexic of the code is valid.</li>
                             <li>Parser: sintaxis is verified and save all the elements in a stack.</li>
                             <li>Semantic analyzer: it converts the stack on a AST, while traversing the tree solving all assigned operations.</li>
@@ -63,13 +63,13 @@ const Projects : ProjectsI = {
                     <li>Every stage were solved using differents algorithms of computational theory and compilers.</li>
                 </ul>
             </span>
-        ),
-        es : (
+        ,
+        es : 
             <span>
                 <p>Este proyecto fue realizado en Java a mediados de 2023 en colaboración de mi compañera Aranza para mi curso de compiladores. Es un intérprete donde puedes programar diferentes estructuras como bucles, condicionales y resolver operaciones aritméticas.</p>
-                <ul>
+                <ul className="list-disc list-inside">
                     <li>El código se evalúa con tres etapas diferentes.
-                        <ul>
+                        <ul className="list-decimal list-inside">
                             <li>Escáner: verifica si el léxico del código es válido.</li>
                             <li>Analizador sintáctico: se verifica la sintaxis y se guardan todos los elementos en una pila.</li>
                             <li>Análisis semántico: convierte la pila en un AST, mientras recorre el árbol resolviendo todas las operaciones asignadas.</li>
@@ -79,7 +79,7 @@ const Projects : ProjectsI = {
                     <li>Cada etapa se resolvió utilizando diferentes algoritmos de teoría computacional y compiladores.</li>
                 </ul>
             </span>
-        ),
+        ,
         LinkToProject : "https://github.com/alexismrosales/interpretex",
         LinkToWeb : "",
         Tags : {
@@ -94,7 +94,7 @@ const Projects : ProjectsI = {
         en : (
             <span>
                 <p>This web app was a school project created at the end of 2022. Developed with the LAMP stack (Linux, ApacheServer, MySQL and PHP), Javascript using DOM.</p>
-                <ul>
+                <ul className="list-disc list-inside">
                     <li>Two roles were created, one for the students and the other for the administrators.</li>
                     <br/>
                     <li>The app allows students create  a new register and assigning them a schedule depending of the avalibity of the classrooms and hours, once you are registered a pdf with the date will be avalible to download.</li>
@@ -106,7 +106,7 @@ const Projects : ProjectsI = {
         es : (
             <span>
                 <p>Esta aplicación web fue un proyecto escolar creado a finales de 2022. Desarrollado con el stack LAMP (Linux, ApacheServer, MySQL y PHP), Javascript utilizando DOM.</p>
-                <ul>
+                <ul className="list-disc list-inside">
                     <li>Se crearon dos roles, uno para los estudiantes y otro para los administradores.</li>
                     <br/>
                     <li>La aplicación permite a los estudiantes crear un nuevo registro y asignarles un horario dependiendo de la disponibilidad de las aulas y las horas, una vez que esté registrado, un pdf con la fecha estará disponible para descargar.</li>
