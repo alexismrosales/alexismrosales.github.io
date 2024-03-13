@@ -10,6 +10,35 @@ export type Program = {
 export interface ProgramsI { [key: string]: Program }
 
 const Programs : ProgramsI = {
+    ToDoList : {
+        Title : (
+            <h1>ToDoList</h1>
+        ),
+        en : (
+            <p>
+                This is a web app I made to practice my skills with React and Spring Boot(Java). It is a simple to do list where you can add, delete and mark as done the tasks you have to do. 
+                <br/><br/>
+                The app is using the endpoints given by Spring Boot, using different CRUD operations with HTTP request like POST, GET and DELETE, saving the tasks of the browser into a database in MySQL.
+                <br/><br/>
+                The database table for the tasks is created with Lombok and fetching the data with Axios.
+            </p>
+        ),
+        es : (
+            <p>
+                Esta es una aplicación web que hice para practicar mis habilidades con React y Spring Boot (Java). Es una lista de tareas pendientes simple donde puedes agregar, eliminar y marcar como hechas las tareas que tienes que hacer.
+                <br/><br/>
+                La aplicación está utilizando los puntos finales dados por Spring Boot, utilizando diferentes operaciones CRUD con solicitudes HTTP como POST, GET y DELETE, guardando las tareas del navegador en una base de datos en MySQL.
+                <br/><br/>
+                La tabla de la base de datos para las tareas se crea con Lombok y se obtiene los datos con Axios.
+            </p>
+        ),
+        LinkToProject : "https://github.com/alexismrosales/to_do_list_app",
+        LinkToWeb : "",
+        Tags : {
+            en : ["React","Spring Boot","Java","MySQL","One Day Project"],
+            es : ["React","Spring Boot","Java","MySQL","Proyecto de un día"]
+        }
+    },
     DualSimplexAlgorithm : {
         Title : (
             <h1>DualSimplexAlgorithm</h1>
