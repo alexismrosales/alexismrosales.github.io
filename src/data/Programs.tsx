@@ -10,6 +10,35 @@ export type Program = {
 export interface ProgramsI { [key: string]: Program }
 
 const Programs : ProgramsI = {
+    Portfolio : {
+        Title : (
+            <h1>Portfolio</h1>
+        ),
+        en : (
+            <p>
+                This is my personal portfolio, I made it to show my projects and skills. The website is made with React and Typescript, using different libraries like Tailwind and i18next.
+                <br/><br/>
+                The website is hosted in GitHub Pages and the source code is in my GitHub repository.
+                <br/><br/>
+                The website is responsive and a language toggle option.
+            </p>
+        ),
+        es : (
+            <p>
+                Este es mi portafolio personal, lo hice para mostrar mis proyectos y habilidades. El sitio web está hecho con React y Typescript, utilizando diferentes bibliotecas como React Router Dom y i18next.
+                <br/><br/>
+                El sitio web está alojado en GitHub Pages y el código fuente está en mi repositorio de GitHub.
+                <br/><br/>
+                El sitio web es responsivo y tiene una opción para cambiar de idioma.
+            </p>
+        ),
+        LinkToProject : "https://github.com/alexismrosales/alexismrosales.github.io",
+        LinkToWeb : "https://alexismrosales.github.io/",
+        Tags : {
+            en : ["React","Typescript","Tailwind","Personal Project"],
+            es : ["React","Typescript","Tailwind","Personal Project"]
+        }
+    },
     ToDoList : {
         Title : (
             <h1>ToDoList</h1>
