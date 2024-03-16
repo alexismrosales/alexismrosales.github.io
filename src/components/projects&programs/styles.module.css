@@ -21,6 +21,7 @@
     items-center
     justify-center
     grid
-    lg:grid-cols-3
+    2xl:grid-cols-3
+    md:grid-cols-2
     grid-cols-1
 }
