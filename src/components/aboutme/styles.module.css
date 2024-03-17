@@ -1,16 +1,16 @@
 .container{
     @apply
-    md:h-[45rem]
     h-auto
     w-full
     bg-white
-    py-10
-    md:py-0
     md:px-[10rem]
+    px-1
+    py-12
     flex
     items-center
     grid
-    md:grid-cols-2
+    lg:grid-cols-2
+    grid-cols-1
     drop-shadow-2xl
 }
 
@@ -31,7 +31,6 @@
 }
 .text{
     @apply
-    md:px-[8rem]
     px-4
     text-justify;
     font-family: 'Roboto Slab', serif;
@@ -39,7 +38,7 @@
 .phrase{
     @apply
     px-10
-    md:px-[14rem]
+   
     text-center;
     font-family: 'Roboto Slab', serif;
 }
