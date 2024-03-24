@@ -5,7 +5,11 @@ module.exports = {
     "./**/@material-tailwind/**/*.{html,js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '2xl': { 'min': '1800px' },
+      }
+    }
   },
   plugins: [],
 }

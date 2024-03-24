@@ -1,27 +1,12 @@
-.container{
-    @apply
-    h-auto
-    w-full
-    p-4
+.container {
+  @apply h-auto w-full p-4
 }
-.title{
-    @apply
-    md:text-[4rem]
-    text-5xl
-    text-center
-    drop-shadow-2xl
-    mt-[2rem]
-    uppercase;
-    font-family: 'Roboto Slab', serif;
+
+.title {
+  @apply md:text-[4rem] text-5xl text-center drop-shadow-2xl mt-[2rem] uppercase;
+  font-family: 'Roboto Slab', serif;
 }
-.containerCards
-{
-    @apply
-    flex
-    items-center
-    justify-center
-    grid
-    2xl:grid-cols-3
-    lg:grid-cols-2
-    grid-cols-1
+
+.containerCards {
+  @apply flex items-center justify-center grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1
 }
