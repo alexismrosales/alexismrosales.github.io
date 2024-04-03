@@ -10,7 +10,7 @@ export type Program = {
 export interface ProgramsI { [key: string]: Program }
 
 const Programs : ProgramsI = {
-    Portfolio : {
+   /*  Portfolio : {
         Title : (
             <h1>Portfolio</h1>
         ),
@@ -34,7 +34,7 @@ const Programs : ProgramsI = {
             en : ["React","Typescript","Tailwind","Personal Project"],
             es : ["React","Typescript","Tailwind","Personal Project"]
         }
-    },
+    }, */
     ToDoList : {
         Title : (
             <h1>ToDoList</h1>

@@ -10,6 +10,41 @@ export type Project = {
 export interface ProjectsI { [key: string]: Project }
 
 const Projects : ProjectsI = {
+    URLShortener : {
+        Title : (
+            <h1>AlxmrURLShortener</h1>
+        ),
+        en : (
+            <span>
+                <p>This project was made in march 2024. It is a web app that shortens URLs. It was developed using React/Typescript for the client app and Java (Spring Boot) with PostgreSQL and deployed in Heroku using a custom domain.</p>
+                <ul className="list-disc list-inside">
+                    <li>It has a simple interface where you can paste the URL you want to shorten and it will generate a new URL.</li>
+                    <br/>
+                    <li>It is plan to have a statistics page where you can see the number of times the shortened URL has been visited.</li>
+                    <br/>
+                    <li>The app still in development and also is planned to have a CLI app for linux distros.</li>
+                </ul>
+            </span>
+        ),
+        es : (
+            <span>
+                <p>Este proyecto fue realizado en marzo de 2024. Es una aplicación web que acorta URLs. Fue desarrollado utilizando React/Typescript para la aplicación cliente y Java (Spring Boot) con PostgreSQL y desplegado en Heroku utilizando un dominio personalizado.</p>
+                <ul className="list-disc list-inside">
+                    <li>Tiene una interfaz simple donde puedes pegar la URL que deseas acortar y generará una nueva URL.</li>
+                    <br/>
+                    <li>Se planea tener una página de estadísticas donde puedas ver el número de veces que se ha visitado la URL acortada.</li>
+                    <br/>
+                    <li>The app still in development and also is planned to have a CLI app for linux distros.</li>
+                </ul>
+            </span>
+        ),
+        LinkToProject : "https://github.com/alexismrosales/url_shortener",
+        LinkToWeb : "https://alxmr.tech",
+        Tags : {
+            en : ["Spring Boot" ,"PostgreSQL","React","Typescript","Personal Project"],
+            es : ["Spring Boot" ,"PostgreSQL","React","Typescript","Proyecto Personal"]
+        }
+    },
     LoveAnalysis : {
         Title : (
             <h1>LoveAnalysis</h1>
@@ -51,6 +86,7 @@ const Projects : ProjectsI = {
         en : 
             <span>
                 <p>This project was made in Java at mid-2023 in collaboration of my partner Aranza for my compilers course. It is an interpreter were you can program different structures like loops, conditionals and solve arithmetic operations.</p>
+                <br/>
                 <ul className="list-disc list-inside">
                     <li>The code is evaluated with three different stages.  
                         <ul className="list-disc list-inside">
@@ -67,6 +103,7 @@ const Projects : ProjectsI = {
         es : 
             <span>
                 <p>Este proyecto fue realizado en Java a mediados de 2023 en colaboración de mi compañera Aranza para mi curso de compiladores. Es un intérprete donde puedes programar diferentes estructuras como bucles, condicionales y resolver operaciones aritméticas.</p>
+                <br/>
                 <ul className="list-disc list-inside">
                     <li>El código se evalúa con tres etapas diferentes.
                         <ul className="list-decimal list-inside">
@@ -94,6 +131,7 @@ const Projects : ProjectsI = {
         en : (
             <span>
                 <p>This web app was a school project created at the end of 2022. Developed with the LAMP stack (Linux, ApacheServer, MySQL and PHP), Javascript using DOM.</p>
+                <br/>
                 <ul className="list-disc list-inside">
                     <li>Two roles were created, one for the students and the other for the administrators.</li>
                     <br/>
@@ -106,6 +144,7 @@ const Projects : ProjectsI = {
         es : (
             <span>
                 <p>Esta aplicación web fue un proyecto escolar creado a finales de 2022. Desarrollado con el stack LAMP (Linux, ApacheServer, MySQL y PHP), Javascript utilizando DOM.</p>
+                <br/>
                 <ul className="list-disc list-inside">
                     <li>Se crearon dos roles, uno para los estudiantes y otro para los administradores.</li>
                     <br/>
@@ -129,8 +168,10 @@ const Projects : ProjectsI = {
         en : (
             <span>
                 <p>
-                    I've been solving different coding problems and here's a repository with all my solutions. I always try to approach the problem avoiding brute force to get best time and space complexity. The repository is constantly updated. 
-                    <br/>
+                    I've been solving different coding problems and here's a repository with all my solutions. 
+                    <br/><br/>
+                    I always try to approach the problem avoiding brute force to get best time and space complexity. The repository is constantly updated. 
+                    <br/><br/>
                     Most of my solution were made in C++ for convenience.
                 </p>
             </span>
@@ -138,8 +179,10 @@ const Projects : ProjectsI = {
         es : (
             <span>
                 <p>
-                    He estado resolviendo diferentes problemas de programción y aquí hay un repositorio con todas mis soluciones. Siempre intento abordar el problema evitando la fuerza bruta para obtener la mejor complejidad de tiempo y espacio. El repositorio se actualiza constantemente.
-                    <br/>
+                    He estado resolviendo diferentes problemas de programción y aquí hay un repositorio con todas mis soluciones. 
+                    <br/><br/>
+                    Siempre intento abordar el problema evitando la fuerza bruta para obtener la mejor complejidad de tiempo y espacio. El repositorio se actualiza constantemente.
+                    <br/><br/>
                     La mayoría de mis soluciones se hicieron en C++ por conveniencia.
                 </p>
             </span>

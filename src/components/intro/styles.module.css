@@ -12,6 +12,7 @@
     lg:h-screen
     h-auto
     w-full
+    py-2
     bg-[var(--purple)]
 }
 .carousel{

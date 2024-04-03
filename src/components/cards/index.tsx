@@ -28,6 +28,7 @@ const CustomCard: FunctionComponent<CardData> = props => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
 
+<<<<<<< HEAD
   const Item = props.element as Project | Program;
   title = Item.Title;
   linkgh = Item.LinkToProject;
@@ -55,6 +56,47 @@ const CustomCard: FunctionComponent<CardData> = props => {
             <br />
             <div >
               {text}
+=======
+    const Item = props.element as Project | Program;
+    title = Item.Title;
+    linkgh = Item.LinkToProject;
+    linkweb = Item.LinkToWeb;
+    text = i18n.language === "en" ? Item.en : Item.es;
+    tags = i18n.language === "en" ? Item.Tags.en : Item.Tags.es;
+   
+    path = `img/${props.type}/${props.name}.png`;
+    
+    return (
+        <CardDataContext.Provider value={props}>
+            <div className={style.container}>
+                <Card className={style.card} placeholder="Card">
+                    <CardHeader color="white" className="relative h-100" placeholder="Card Header">
+                        <img className={style.cardImg} src={path} alt={props.name} onClick={handleOpen}/>
+                    </CardHeader>
+                    <CardBody className={style.CardBody} placeholder={`Text of ${props.name}`} >
+                        <h1 className={style.CardTitle}>{title}</h1>
+                        <br/>
+                        <div >
+                            {text}
+                        </div>
+                    </CardBody>
+                    <CardFooter className="absolute inset-x-0 bottom-0"  placeholder={`Text of ${props.name}`}>
+                        <div>
+                            <ListTags tags={tags}/>
+                            <hr className='border-double'/>
+                            <div className={style.links}>
+                                <a href={linkgh} className={classNames(style.link, style.gh)}>
+                                    <img className={style.imgGH} src='img/logos/gh_white.png'/>
+                                </a>
+                                {linkweb !== "" && 
+                                <a href={linkweb} className={classNames(style.link, style.web)}>
+                                    <img className={style.imgWeb} src='img/logos/web_white.png'/>
+                                </a>}
+                            </div>
+                        </div>
+                    </CardFooter>
+                </Card>
+>>>>>>> e380920 (some changes)
             </div>
           </CardBody>
           {/* 

@@ -1,5 +1,5 @@
 
-export default function smoothScroll(classSelector) {
+export default function smoothScroll (classSelector) {
     const scrollLinks = document.querySelectorAll(classSelector);
 
     scrollLinks.forEach((link) => {
