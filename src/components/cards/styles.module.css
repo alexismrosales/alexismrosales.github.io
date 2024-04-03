@@ -1,80 +1,55 @@
-.container{
-    @apply
-    flex
-    items-center
-    justify-center
+.container {
+  @apply flex items-center justify-center
 }
-.card{
-    @apply
-    mt-[6rem]
-    md:w-[35rem]
-    w-[30rem]
-    md:h-[58rem]
-    h-[63rem]
-    bg-white
+
+.card {
+  @apply mt-[6rem] md:w-[35rem] w-[30rem] md:h-[60rem] h-[63rem] bg-white
 }
-.CardBody
-{
-    @apply
-    text-justify;
+
+.CardBody {
+  @apply text-justify;
 }
-.CardTitle{
-    @apply
-    text-2xl
-    font-bold;
-    font-family: 'Roboto Mono', monospace;
+
+.CardTitle {
+  @apply text-2xl font-bold;
+  font-family: 'Roboto Mono', monospace;
 }
-.tags{
-    @apply
-    pb-2
+
+.tags {
+  @apply pb-2
 }
-.tag
-{
-    @apply
-    p-2
-    mx-1
-    my-1
-    flex
-    inline-flex;
-    
-    border-left-width: thick;
-    border-left-style: solid;
-    border-left-color: var(--purple);
-    border-radius: 2em;
-    color: var(--white);
-    font-weight: bold;
-    background: var(--black);
-    background-size: 100%;
-    text-decoration: none;
-    font-size: 14px;
+
+.tag {
+  @apply p-2 mx-1 my-1 flex inline-flex;
+
+  border-left-width: thick;
+  border-left-style: solid;
+  border-left-color: var(--purple);
+  border-radius: 2em;
+  color: var(--white);
+  font-weight: bold;
+  background: var(--black);
+  background-size: 100%;
+  text-decoration: none;
+  font-size: 14px;
 }
-.links{
-    @apply
-    flex
-    items-center
-    justify-center
-    pt-3
+
+.links {
+  @apply flex items-center justify-center pt-3
 }
-.link{
-    @apply
-    mx-2
-    bg-black
-    p-1
-    px-3
-    rounded-3xl
+
+.link {
+  @apply mx-2 bg-black p-1 px-3 rounded-3xl
 }
-.imgGH{
-    @apply
-    w-[2.5rem]
-    h-[2.5rem]
-    p-1
+
+.imgGH {
+  @apply w-[2.5rem] h-[2.5rem] p-1
 }
-.imgWeb{
-    @apply
-    w-[2.5rem]
-    h-[2.5rem]
+
+.imgWeb {
+  @apply w-[2.5rem] h-[2.5rem]
 }
-.dialogImg{
-    @apply
-    size-full
+
+.dialogImg {
+  @apply size-full
 }
