@@ -1,110 +1,67 @@
-@keyframes background-pan{
-    from{
-        background-position: 0% center;
-    }
-    to
-    {
-        background-position: -200% center;
-    }
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
 }
-.container{
-    @apply
-    lg:h-screen
-    h-auto
-    w-full
-    py-2
-    bg-[var(--purple)]
+
+.container {
+  @apply h-3/4 w-full py-2 bg-[var(--purple)]
 }
-.carousel{
-    @apply
-    pt-5
-    md:pt-[4rem]
-    flex
-    items-center
-    justify-center
+
+.carousel {
+  @apply pt-5 md:pt-[4rem] flex items-center justify-center
 }
-.content{
-    @apply
-    flex
-    flex-col
-    pt-3
-    md:pt-[2rem]
-    items-center
-    justify-center
-    text-center
+
+.content {
+  @apply flex flex-col pt-3 md:pt-[2rem] items-center justify-center text-center
 }
-.name{
-    @apply
-    text-2xl
-    md:text-4xl
-    drop-shadow-xl
-    p-2;
-    animation: background-pan 20s linear infinite;
-    font-family: 'Roboto Slab', serif;
-    color: transparent;
-    background: linear-gradient( 90deg, var(--purple), var(--white));
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+
+.name {
+  @apply text-2xl md:text-4xl drop-shadow-xl p-2;
+  animation: background-pan 20s linear infinite;
+  font-family: 'Roboto Slab', serif;
+  color: transparent;
+  background: linear-gradient(90deg, var(--purple), var(--white));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
-.nameP1{
-    font-family: 'Playfair Display', serif;
+
+.nameP1 {
+  font-family: 'Playfair Display', serif;
 }
-.mainText{
-    @apply
-    drop-shadow-2xl
-    p-4
-    pb-8
-    text-white
-    md:p-[2rem]
-    md:w-1/2
-    text-center
-    text-base;
-    font-family: 'Roboto Mono', monospace;
+
+.mainText {
+  @apply drop-shadow-2xl p-4 pb-8 text-white md:p-[2rem] md:w-1/2 text-center text-base;
+  font-family: 'Roboto Mono', monospace;
 }
-.buttonResume{
-    @apply
-    bg-[var(--black)]
-    text-[var(--white)]
-    p-3
-    pr-5
-    pl-5
-    rounded-full
-    text-base
-    uppercase
-    font-bold
-    hover:bg-white
-    hover:text-[var(--black)];
-    font-family: 'Roboto Mono', monospace;
+
+.buttonResume {
+  @apply bg-[var(--black)] text-[var(--white)] p-3 pr-5 pl-5 rounded-full text-base uppercase font-bold hover:bg-white hover:text-[var(--black)];
+  font-family: 'Roboto Mono', monospace;
 }
-.links{
-    @apply
-    w-full
-    md:hidden
-    pt-6
-    md:pt-[2rem]
-    gap-[4rem]
-    flex
-    items-center
-    justify-center
+
+.links {
+  @apply w-full md:hidden pt-6 md:pt-[2rem] gap-[4rem] flex items-center justify-center
 }
-.logoGH{
-    @apply
-    w-8
-    h-8
+
+.logoGH {
+  @apply w-8 h-8
 }
-.logoIN{
-    @apply
-    w-9
-    h-9
+
+.logoIN {
+  @apply w-9 h-9
 }
-.arrowBtn{
-    @apply
-    pt-[2rem]
+
+.arrowBtn {
+  @apply pt-[2rem]
 }
-.arrow{
-    @apply
-    w-8
-    h-8
+
+.arrow {
+  @apply w-8 h-8
 }
