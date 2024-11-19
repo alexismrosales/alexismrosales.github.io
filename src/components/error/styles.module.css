@@ -1,0 +1,7 @@
+.container_ex {
+    /* global */
+    @apply px-8;
+    /* md */
+    @apply md:p-20 lg:mx-36 xl:mx-52;
+    font-family: "Nunito Sans", sans-serif;
+}

@@ -1,0 +1,70 @@
+/* canvas */
+.sidebar {
+    @apply bg-[var(--purple)] fixed space-y-12 md:space-y-8 h-full w-full;
+    @apply md:w-5/12 lg:w-3/12 bottom-0;
+    @apply flex flex-col justify-center items-center md:items-start;
+    /* Ancho fijo en pantallas medianas */
+    @apply text-center md:text-left text-white text-xl;
+    /* Ajustes de texto */
+    @apply p-8 tracking-wider;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.sidebar_mobile {
+    /* sm */
+    @apply bg-[var(--purple)] text-xl text-white h-auto p-7 flex flex-row space-x-3 items-center;
+}
+
+.back_svg {
+    @apply h-5 w-5
+}
+
+/* title */
+.site_title {
+    @apply text-6xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold tracking-normal;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.site_title_mobile {
+    @apply text-xl text-white font-bold;
+    font-family: 'Playfair Display', serif;
+}
+
+/* lead */
+.lead {
+    @apply md:text-lg lg:text-xl text-center md:text-left;
+    @apply tracking-normal;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* resume button*/
+.buttonResume {
+    @apply flex flex-col space-y-2
+}
+
+/* nav */
+.nav_menu {
+    @apply flex flex-col space-y-2 font-bold
+}
+
+.nav_icons {
+    /* sm */
+    @apply inline-flex justify-center space-x-3 w-16;
+    /* md */
+    @apply md:justify-start
+}
+
+.switch_container {
+    /* sm */
+    @apply fixed right-2 bottom-6 md:bottom-2;
+    /* md */
+    @apply md:relative md:flex md:items-end md:right-auto md:bottom-auto;
+}
+
+.switch_btn {
+    /* sm */
+    @apply h-[3rem] w-[10rem] rounded-full flex items-center justify-center bg-[var(--purple)];
+    /* md */
+    @apply md:h-auto md:w-auto md:rounded-none md:items-start md:justify-start md:bg-transparent;
+}

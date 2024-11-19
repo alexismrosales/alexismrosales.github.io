@@ -1,0 +1,17 @@
+.header_mobile {
+    @apply bg-[var(--purple)] pb-6 font-bold text-3xl w-screen -mx-8 px-8 text-white;
+}
+
+.title {
+    /* global */
+    @apply text-5xl font-bold text-[var(--purple)];
+    /* sm */
+}
+
+.dots {
+    @apply text-5xl text-[var(--purple)] text-center
+}
+
+.content_container {
+    @apply pt-10 pb-20 text-justify text-gray-600
+}

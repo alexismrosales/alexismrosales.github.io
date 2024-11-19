@@ -1,0 +1,65 @@
+.container {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.header_mobile {
+    @apply bg-[var(--purple)] pb-6 font-bold text-4xl w-screen -mx-8 px-8 text-white;
+}
+
+.title {
+    /* global */
+    @apply text-5xl font-bold text-[var(--purple)];
+    /* sm */
+}
+
+.item_title {
+    @apply text-3xl font-bold text-[var(--purple)];
+    @apply md:text-4xl
+}
+
+.item_container {
+    @apply flex flex-col;
+    /* sm */
+    /* sm */
+    @apply md:py-0;
+}
+
+.item {
+    @apply my-10
+}
+
+.icon {
+    @apply h-6 w-6 md:h-8 md:w-8
+}
+
+.header {
+    @apply flex flex-wrap space-x-3 items-center
+}
+
+.date {
+    @apply text-gray-500 mt-5 text-justify md:text-left
+}
+
+.description {
+    @apply mt-5 text-base md:text-lg text-justify md:text-left
+}
+
+.hr_mobile {
+    @apply w-3 h-3 mx-auto my-2 bg-[var(--purple)] border-0 rounded md:my-12
+}
+
+.hr {
+    @apply h-px my-8 bg-gray-200 border-0
+}
+
+.tags_container {
+    @apply mt-5 mb-10 md:p-0
+}
+
+.tag {
+    @apply bg-[var(--purple)] inline-block rounded-full py-1 px-2 mr-3 mt-2 text-center text-white font-bold
+}
+
+.tag_total {
+    @apply bg-white rounded-full px-1 text-[var(--purple)]
+}

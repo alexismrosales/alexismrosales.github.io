@@ -1,7 +1,7 @@
 {
   "homepage": "https://alexismrosales.github.io",
   "name": "alexismrosales.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.0",
     "react-jsx-parser": "^1.29.0",
+    "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
