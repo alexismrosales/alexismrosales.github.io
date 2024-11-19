@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { TagData } from "./interfaces"
+import { TagData } from "./utils"
 
 import styles from "./styles.module.css"
 const Tag: FunctionComponent<TagData> = props => {

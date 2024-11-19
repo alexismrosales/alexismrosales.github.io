@@ -13,5 +13,17 @@
 }
 
 .content_container {
-    @apply pt-10 pb-20 text-justify text-gray-600
+    @apply pt-5 pb-20 text-justify text-gray-600
+}
+
+.icon {
+    @apply h-10 w-10 md:h-9 md:w-9;
+}
+
+.links {
+    @apply flex md:flex-col text-sm md:text-base text-[var(--purple)] justify-center space-x-4 space-y-2 md:space-x-0 mt-2 font-bold;
+}
+
+.link {
+    @apply inline-flex items-center space-x-3;
 }

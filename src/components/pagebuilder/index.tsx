@@ -33,7 +33,8 @@ const PageBuilder: React.FC<PageData> = props => {
     const content = en_lang ? props.element.en.content : props.element.es.content
     const tags = en_lang ? props.element.Tags.en : props.element.Tags.es
     const isMobile = width < 768;
-
+    const linkgh = props.element.LinkToProject
+    const linkweb = props.element.LinkToWeb
     return <div>
         <div className={isMobile ? styles.header_mobile : ""}>
             <h1 className={isMobile ? styles.title_mobile : styles.title}>{title}</h1>
@@ -43,10 +44,21 @@ const PageBuilder: React.FC<PageData> = props => {
             && tags.map((tag) => <Tag id={"tags"} label={tag} total={-1} />)
         }
         <hr className="mt-5" />
+        <div className={styles.links}>
+            <a href={linkgh} className={styles.link}>
+                <img className={styles.icon} src="/svg/icons/github_black.svg" alt="Icon" />
+                {!isMobile && <span>{linkgh}</span>}
+            </a>
+            {linkweb !== "" &&
+                <a href={linkweb} className={styles.link}>
+                    <img className={styles.icon} src="/svg/icons/globe_black.svg" alt="Icon" />
+                    {!isMobile && <span>{linkweb}</span>}
+                </a>}
+        </div>
         <div className={styles.content_container}>
             {content}
         </div>
-    </div>
+    </div >
 }
 
 

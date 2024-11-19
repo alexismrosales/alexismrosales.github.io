@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from "react-router-dom";
 import useWindowSize from "../_scripts/resolution";
 
-import { ListGroupsProps, ItemsData, TagsData } from "./interfaces"
+import { ListGroupsProps, ItemsData, TagsData, normalizeString, SpacesToHyphen } from "./utils"
 import ProjectData from "../../data/Projects";
 import ProgramData from "../../data/Programs";
 
@@ -13,7 +13,7 @@ import Tag from './tag';
 import { useEffect, useState } from 'react';
 
 
-const SpacesToHyphen = /\s+/g;
+
 
 
 const ListGroup: React.FC<ListGroupsProps> = props => {
@@ -58,9 +58,6 @@ const ListGroup: React.FC<ListGroupsProps> = props => {
     )
 }
 
-const normalizeString = (str: string) => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Elimina acentos
-};
 
 const ListTags: React.FC<TagsData> = (props) => {
     const navigate = useNavigate();
@@ -103,24 +100,13 @@ const ListTags: React.FC<TagsData> = (props) => {
 
 const ListItems: React.FC<ItemsData> = (props) => {
     const { i18n } = useTranslation();
-    const navigate = useNavigate()
     const location = useLocation();
     const en_lang = i18n.language === "en";
     const tag = location.hash.replace("#", "").replace(SpacesToHyphen, "");
     const [filter, setFilter] = useState("");
     const [filteredElements, setFilteredElements] = useState(Object.entries(props.elements));
 
-    const handleButton = (destiny: string) => {
-        switch (location.pathname) {
-            // In case the nav path is home (projects is set as default page for not mobiles devices)
-            case "/":
-                navigate(`projects/${destiny}`);
-                break;
-            default:
-                navigate(destiny)
-                break;
-        }
-    }
+
     useEffect(() => {
         setFilter(tag);
     }, [tag]);
@@ -143,9 +129,7 @@ const ListItems: React.FC<ItemsData> = (props) => {
             {filteredElements.map(([name, Element]) => (
                 <>
                     <hr />
-                    <button onClick={() => handleButton(normalizeString(name).replace(SpacesToHyphen, "-"))}>
-                        <Item title={name} element={Element} type={props.type} />
-                    </button>
+                    <Item title={name} element={Element} type={props.type} />
                 </>
             ))}
         </div>
