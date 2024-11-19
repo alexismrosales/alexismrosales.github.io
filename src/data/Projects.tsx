@@ -297,7 +297,7 @@ const Projects: ProjectsI = {
             description: "Repository with solutions to coding problems, avoiding brute force to optimize time and space. Constantly updated, mainly in Go and C++.",
             content: (
                 <span>
-                    <img src="/img/Program/SomeCodes.png" className={styles.img} />
+                    <img src="/img/Project/SomeCodes.png" className={styles.img} />
                     <p>
                         I've been solving different coding problems and here's a repository
                         with all my solutions.
@@ -318,7 +318,7 @@ const Projects: ProjectsI = {
             description: "Repositorio con soluciones a problemas de programación, evitando fuerza bruta para optimizar tiempo y espacio. Actualizado constantemente, principalmente en Go y C++.",
             content: (
                 <span>
-                    <img src="/img/Program/SomeCodes.png" className={styles.img} />
+                    <img src="/img/Project/SomeCodes.png" className={styles.img} />
                     <p>
                         He estado resolviendo diferentes problemas de programción y aquí hay
                         un repositorio con todas mis soluciones.
