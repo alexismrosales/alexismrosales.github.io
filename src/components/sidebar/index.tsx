@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import useWindowSize from "../_scripts/resolution";
 import SwitchBtn from '../switchbutton'
 import style from './styles.module.css'
+import links from "./../../data/links.json"
 
 const Sidebar = () => {
 
@@ -78,10 +79,10 @@ const Sidebar = () => {
 
             {/* Logos */}
             <div className={isMobile ? (notHome ? "hidden" : style.nav_icons) : style.nav_icons}>
-                <a href="">
+                <a href={links.github}>
                     <img className="" alt="" src="/svg/icons/github_white.svg" />
                 </a>
-                <a href="">
+                <a href={links.linkedin}>
                     <img className="" alt="" src="/svg/icons/linkedin_white.svg" />
                 </a>
             </div>
