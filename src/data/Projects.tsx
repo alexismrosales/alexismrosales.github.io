@@ -21,13 +21,12 @@ const Projects: ProjectsI = {
                 <span>
                     <img src="/img/Project/URLShortener.png" className={styles.img} />
                     <p>
-                        This project was made in march 2024. It is a web app that shortens
-                        URLs. It was developed using React/Typescript for the client app and
+                        It is a simple web app that shorten URLs. It was developed using React/Typescript for the client app and
                         Java (Spring Boot) with PostgreSQL and deployed in Heroku using a
                         custom domain.
                     </p>
                     <br />
-                    <ul className="list-disc list-inside">
+                    <ul className={styles.list}>
                         <li>
                             It has a simple interface where you can paste the URL you want to
                             shorten and it will generate a new URL.
@@ -39,29 +38,51 @@ const Projects: ProjectsI = {
                         </li>
                         <br />
                         <li>
-                            The app still in development and also is planned to have a CLI app
-                            for linux distros.
+                            I would like in a future use the API to develop a CLI app for Linux.
                         </li>
                     </ul>
-                </span>
+                    <br />
+                    <p>
+                        During development, I encountered several challenges. The first was
+                        selecting an appropriate design pattern. Since the application was intended to be a REST API,
+                        I decided to use the
+                        <a className={styles.link} href="https://tom-collings.medium.com/controller-service-repository-16e29a4684e5"> Controller-Service-Repository </a>
+                        design pattern, where each layer is responsible for specific tasks.
+                    </p>
+                    <br />
+                    <p>
+                        However, the biggest challenge I faced while creating the application was assigning a
+                        <span className="italic">short URL</span> to each URL provided by the user.
+                        To achieve this, I used the
+                        <a className={styles.link} href="https://www.movable-type.co.uk/scripts/sha256.html"> SHA-256 </a>
+                        encoding algorithm, which generates a unique hash for every user-provided URL.
+                        Then, I used the first 5 characters of the hash as a unique "ID" to search in the database
+                        for its corresponding <span className="italic"> long URL</span>.
+                    </p>
+                    <br />
+                    <p>
+                        If you want to see a more technical explanation of the app's implementation, you can visit
+                        <a className={styles.link} href="https://github.com/alexismrosales/url_shortener"> my GitHub repository</a>, where I explain the functionality and design of the app in greater detail.
+                    </p>
+                </span >
             ),
 
         },
         es: {
             Title: "AlxmrURLShortener",
-            date: "Abril 8 2023",
+            date: "March 2024",
             description: "Aplicación web para acortar URLs desarrollada con React/TypeScript y Java (Spring Boot). Actualmente desplegada en Heroku.",
             content: (
                 <span>
                     <img src="/img/Project/URLShortener.png" className={styles.img} />
                     <p>
-                        Este proyecto fue realizado en marzo de 2024. Es una aplicación web
-                        que acorta URLs. Fue desarrollado utilizando React/Typescript para la
+                        Aplicación web simple que acorta URLs. Fue desarrollado utilizando React/Typescript para la
                         aplicación cliente y Java (Spring Boot) con PostgreSQL y desplegado en
                         Heroku utilizando un dominio personalizado.
+
                     </p>
                     <br />
-                    <ul className="list-disc list-inside">
+                    <ul className={styles.list}>
                         <li>
                             Tiene una interfaz simple donde puedes pegar la URL que deseas
                             acortar y generará una nueva URL.
@@ -73,11 +94,32 @@ const Projects: ProjectsI = {
                         </li>
                         <br />
                         <li>
-                            {" "}
-                            La aplicación aun sigue en desarrollo, también esta planeado tener
-                            una CLI app especificamente para Linux.
+                            Me gustaría en un futuro usar la API para crear una CLI app especificamente para Linux.
                         </li>
                     </ul>
+                    <br />
+
+                    <p>
+                        Durante el desarrollo me encontré con diferentes retos. El primero fue
+                        elegir un patrón de diseño adecuado. Dado que la aplicación fue creada con la
+                        intención de ser una REST API, opté por usar el patrón de diseño
+                        <a className={styles.link} href="https://tom-collings.medium.com/controller-service-repository-16e29a4684e5"> Controlador-Servicio-Repositorio</a>, donde cada capa se encarga de tareas específicas.
+                    </p>
+                    <br />
+                    <p>
+                        Sin embargo, el mayor reto al que me enfrenté al crear la aplicación fue asignar un
+                        <span className="italic"> URL corto</span> a cada URL proporcionado por el usuario.
+                        Para lograrlo, utilicé el algoritmo de codificación
+                        <a className={styles.link} href="https://www.movable-type.co.uk/scripts/sha256.html"> SHA-256</a>, el cual genera un "hash" único para cada URL ingresado por el usuario.
+                        Luego, tomé los primeros 5 caracteres del hash como un "ID" único para poder buscar en la base de datos el
+                        <span className="italic"> URL largo</span> correspondiente.
+                    </p>
+                    <br />
+                    <p>
+                        Si deseas conocer más detalles técnicos sobre la implementación de la aplicación, puedes visitar
+                        <a className={styles.link} href="https://github.com/alexismrosales/url_shortener"> mi repositorio</a> en GitHub, donde explico a mayor profundidad el funcionamiento de la app y su diseño.
+                    </p>
+
                 </span>
             )
         },
@@ -236,7 +278,7 @@ const Projects: ProjectsI = {
             description: "School web app developed in 2022 using LAMP and JavaScript. It manages student registrations, assigns schedules based on availability.",
             content: (
                 <span>
-                    <img src="/img/Program/RegisterForStudents.png" className={styles.img} />
+                    <img src="/img/Project/RegisterForStudents.png" className={styles.img} />
                     <p>
                         This web app was a school project created at the end of 2022. Developed with the LAMP stack (Linux, Apache Server, MySQL, and PHP), and JavaScript using DOM.
                     </p>
@@ -262,7 +304,7 @@ const Projects: ProjectsI = {
             description: "Aplicación web escolar desarrollada en 2022 con LAMP y JavaScript. Permite gestionar registros de estudiantes, asignar horarios según disponibilidad y descargar un PDF.",
             content: (
                 <span>
-                    <img src="/img/Program/RegisterForStudents.png" className={styles.img} />
+                    <img src="/img/Project/RegisterForStudents.png" className={styles.img} />
                     <p>
                         Esta aplicación web fue un proyecto escolar creado a finales de 2022. Desarrollado con el stack LAMP (Linux, Apache Server, MySQL y PHP), y JavaScript utilizando DOM.
                     </p>
