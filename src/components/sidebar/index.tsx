@@ -51,7 +51,7 @@ const Sidebar = () => {
                 </svg>
             </button>
             <h1 className={isMobile ? (notHome ? style.site_title_mobile : style.site_title) : style.site_title}>
-                <a href="" className="">
+                <a href="/" className="">
                     <span className="text-[var(--black)]">Alexis</span> M.Rosales
                 </a>
             </h1>
@@ -71,9 +71,7 @@ const Sidebar = () => {
                 </Link>
                 <a
                     href={i18n.language === "en" ? "resources/en_resume.pdf" : "resources/es_resume.pdf"}
-                    download
-                >
-                    {en_lang ? "Resume" : "Curriculum"}
+                    download > {en_lang ? "Resume" : "Curriculum"}
 
                 </a>
             </nav>
