@@ -21,7 +21,7 @@ const Sidebar = () => {
     const [navOption, setNavOption] = useState(""); // home path or /
 
     const handleButton = () => {
-        if (location.pathname === "/projects") {
+        if (location.pathname === "/projects" || location.pathname === "/programs") {
             navigate("")
         } else {
             navigate(-1)

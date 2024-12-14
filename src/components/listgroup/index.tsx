@@ -89,7 +89,6 @@ const ListTags: React.FC<TagsData> = (props) => {
                     <Tag id={"tags"} label={label} total={total} />
                 </button>
             })}
-            {}
             <button onClick={() => handleClick(AllTag)}>
                 <Tag id={"tags"} label={AllTag} total={tagSize} />
             </button>

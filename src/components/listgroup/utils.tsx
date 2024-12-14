@@ -30,5 +30,5 @@ export interface TagData {
 export const SpacesToHyphen = /\s+/g;
 
 export const normalizeString = (str: string) => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Elimina acentos
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 };
