@@ -71,7 +71,7 @@ const Sidebar = () => {
                     {en_lang ? "About me" : "Sobre mí"}
                 </Link>
                 <a
-                    href={i18n.language === "en" ? "resources/en_resume.pdf" : "resources/es_resume.pdf"}
+                    href={i18n.language === "en" ? "/resources/en_resume.pdf" : "/resources/es_resume.pdf"}
                     download > {en_lang ? "Resume" : "Curriculum"}
 
                 </a>
