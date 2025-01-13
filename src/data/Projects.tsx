@@ -529,7 +529,7 @@ const Projects: ProjectsI = {
             )
         },
         LinkToProject: "https://github.com/alexismrosales/cpp",
-        LinkToWeb: "Present 2021",
+        LinkToWeb: "",
         Tags: {
             en: ["Competitive Programming", "Go", "C++", "Python", "Algorithms"],
             es: ["Programación Competitiva", "Go", "C++", "Python", "Algoritmos"],
